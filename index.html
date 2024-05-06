@@ -1,0 +1,529 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Switch</title>
+    <!-- Montserrat Font Family -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <!-- ProximaNova Font Family -->
+    <link href="https://fonts.cdnfonts.com/css/proxima-nova-condensed" rel="stylesheet">
+    <!-- Icons CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.1.0/fonts/remixicon.css" rel="stylesheet" />
+    <!-- Slick Slider CDN -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <link rel="stylesheet" type="text/css"
+        href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
+    <!-- Jquery CDN -->
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <!-- CSs file link -->
+    <link rel="stylesheet" href="./assets/style/style.css" />
+</head>
+
+<body>
+    <!-- Hero Section -->
+    <section id="hero-section">
+        <div class="overlay">
+            <!-- Header -->
+            <div id="nav">
+                <div id="nav-menu">
+                    <ul>
+                        <li><a href="#" class="para text-white">Home</a></li>
+                        <li><a href="#" class="para text-white">What we do?</a></li>
+                        <li><a href="#" class="para text-white">Testimonial</a></li>
+                        <li><a href="#" class="para text-white">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div id="logo">
+                    <img src="./assets/media/images/logo_02.png" alt="">
+                </div>
+                <div id="search-bar">
+                    <form action="#">
+                        <input type="search" placeholder="Search..." />
+                        <i class="ri-search-line"></i>
+                    </form>
+                </div>
+                <div class="toggle-bar">
+                    <div>
+                        <img src="./assets/media/images/logo_02.png" alt="">
+                    </div>
+                    <div class="toggle">
+                        <a href=""><img src="./assets/media/toggle.png" alt="" width="60px" height="40px"></a>
+                    </div>
+                </div>
+            </div>
+            <!-- Mobile Header -->
+            <div class="mobile-menu mobile">
+                <div class="mobile-header-logo">
+                    <div id="mobile-logo">
+                        <img src="./assets/media/images/logo_02.png" alt="">
+                    </div>
+                    <div class="cross">
+                        <a href="#"><span class="text-white">+</span></a>
+                    </div>
+                </div>
+                <div id="mobile-nav-menu">
+                    <ul>
+                        <li><a href="#" class="para text-white">Home</a></li>
+                        <li><a href="#" class="para text-white">What we do?</a></li>
+                        <li><a href="#" class="para text-white">Testimonial</a></li>
+                        <li><a href="#" class="para text-white">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div id="m-search-bar">
+                    <form action="#">
+                        <input type="search" placeholder="Search..." />
+                        <i class="ri-search-line"></i>
+                    </form>
+                </div>
+            </div>
+            <!-- Toggle Btn Js -->
+            <script>
+                document.addEventListener("DOMContentLoaded", function () {
+                    const toggleButton = document.querySelector(".toggle");
+                    const mobileMenu = document.querySelector(".mobile-menu");
+                    const crossIcon = document.querySelector(".cross");
+
+                    toggleButton.addEventListener("click", function (event) {
+                        event.preventDefault();
+                        mobileMenu.classList.add("active");
+                    });
+
+                    crossIcon.addEventListener("click", function () {
+                        mobileMenu.classList.remove("active");
+                    });
+                });
+            </script>
+
+            <div id="section-content">
+                <h1 class="text-white">Art is Eternal Happiness</h1>
+                <a class="text-white btn bTn">WORK WITH US</a>
+            </div>
+            <div id="section-scroll-btn">
+                <a class="btn  bTn" href="#next">
+                    scroll down
+                    <i class="ri-arrow-down-line"></i>
+                </a>
+            </div>
+        </div>
+
+    </section>
+    <!-- What we do section -->
+    <section id="section2">
+        <div class="container">
+            <div class="center-content">
+                <h2 class="heading">WHAT WE DO</h2>
+                <p class="description">
+                    Lorem ipsum dolor sit amet. Proin gravida nibh vel velit auctor
+                    aliquet
+                </p>
+            </div>
+            <div class="section2-icons">
+                <div class="cards">
+                    <img src="./assets/media/icon 1.png" alt="" />
+                    <h5>Lorem Ipsum</h5>
+                    <p>
+                        This is Photoshop's version of Lorem Ipsum. Proin gravida nibh vel
+                        velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum
+                        auctor,
+                    </p>
+                    <a class="card-btn text-white">Learn more</a>
+                </div>
+                <div class="cards">
+                    <img src="./assets/media/icon 2.png" alt="" />
+                    <h5>Lorem Ipsum</h5>
+                    <p>
+                        This is Photoshop's version of Lorem Ipsum. Proin gravida nibh vel
+                        velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum
+                        auctor,
+                    </p>
+                    <a class="card-btn text-white">Learn more</a>
+                </div>
+                <div class="cards">
+                    <img src="./assets/media/icon 3.png" alt="" />
+                    <h5>Lorem Ipsum</h5>
+                    <p>
+                        This is Photoshop's version of Lorem Ipsum. Proin gravida nibh vel
+                        velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum
+                        auctor,
+                    </p>
+                    <a class="card-btn text-white btn">Learn more</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Work Section -->
+    <section id="next" class="section3">
+        <div class="container">
+            <div class="center-content">
+                <h2 class="heading">OUR LATEST WORK</h2>
+                <p class="para">
+                    Lorem ipsum dolor sit amet. Proin gravida nibh vel velit auctor
+                    aliquet
+                </p>
+            </div>
+            <div class="section3-tabs">
+                <ul class="tabs">
+                    <li class="tab" data-tab="tab1">Photography</li>
+                    <li class="tab" data-tab="tab2">Design</li>
+                    <li class="tab" data-tab="tab3">Print</li>
+                </ul>
+                <div id="tab1" class="tab-content active">
+                    <div class="img-wrapper">
+                        <img src="./assets/media/section3-img2.png" alt="" width="180px" height="180px" />
+                        <img src="./assets/media/section3-img1.png" alt="" width="180px" height="180px" />
+                        <img src="./assets/media/section3-img3.png" alt="" width="180px" height="180px" />
+                        <img src="./assets/media/section3-img4.png" alt="" width="180px" height="180px" />
+                        <img src="./assets/media/section3-img5.png" alt="" width="180px" height="180px" />
+                    </div>
+                    <div class="img-wrapper">
+                        <img src="./assets/media/section3-img6.png" alt="" width="180px" height="180px" />
+                        <img src="./assets/media/section3-img7.png" alt="" width="180px" height="180px" />
+                        <img src="./assets/media/section3-img8.png" alt="" width="180px" height="180px" />
+                        <img src="./assets/media/section3-img9.png" alt="" width="180px" height="180px" />
+                        <img src="./assets/media/section3-img10.png" alt="" width="180px" height="180px" />
+                    </div>
+                </div>
+
+                <div id="tab2" class="tab-content">
+                    <div class="img-wrapper">
+                        <img src="./assets/media/section3-img6.png" alt="" width="180px" height="180px" />
+                        <img src="./assets/media/section3-img7.png" alt="" width="180px" height="180px" />
+                        <img src="./assets/media/section3-img8.png" alt="" width="180px" height="180px" />
+                        <img src="./assets/media/section3-img9.png" alt="" width="180px" height="180px" />
+                        <img src="./assets/media/section3-img10.png" alt="" width="180px" height="180px" />
+                    </div>
+                    <div class="img-wrapper">
+                        <img src="./assets/media/section3-img2.png" alt="" width="180px" height="180px" />
+                        <img src="./assets/media/section3-img1.png" alt="" width="180px" height="180px" />
+                        <img src="./assets/media/section3-img3.png" alt="" width="180px" height="180px" />
+                        <img src="./assets/media/section3-img4.png" alt="" width="180px" height="180px" />
+                        <img src="./assets/media/section3-img5.png" alt="" width="180px" height="180px" />
+                    </div>
+                </div>
+
+                <div id="tab3" class="tab-content">
+                    <div class="img-wrapper">
+                        <img src="./assets/media/section3-img2.png" alt="" width="180px" height="180px" />
+                        <img src="./assets/media/section3-img1.png" alt="" width="180px" height="180px" />
+                        <img src="./assets/media/section3-img3.png" alt="" width="180px" height="180px" />
+                        <img src="./assets/media/section3-img4.png" alt="" width="180px" height="180px" />
+                        <img src="./assets/media/section3-img5.png" alt="" width="180px" height="180px" />
+                    </div>
+                    <div class="img-wrapper">
+                        <img src="./assets/media/section3-img6.png" alt="" width="180px" height="180px" />
+                        <img src="./assets/media/section3-img7.png" alt="" width="180px" height="180px" />
+                        <img src="./assets/media/section3-img8.png" alt="" width="180px" height="180px" />
+                        <img src="./assets/media/section3-img9.png" alt="" width="180px" height="180px" />
+                        <img src="./assets/media/section3-img10.png" alt="" width="180px" height="180px" />
+                    </div>
+                </div>
+            </div>
+            <div class="section3-btn">
+                <a class=" bTn">
+                    View more work
+                    <i class="ri-arrow-right-line"></i>
+                </a>
+            </div>
+            <script>
+                $(document).ready(function () {
+                    showTab("tab1");
+                    $(".tab").click(function () {
+                        const tabId = $(this).data("tab");
+                        showTab(tabId);
+                    });
+                    function showTab(tabId) {
+                        $(".tab").removeClass("active-tab");
+                        $('[data-tab="' + tabId + '"]').addClass("active-tab");
+                        $(".tab-content").removeClass("active");
+                        $("#" + tabId).addClass("active");
+                    }
+                });
+            </script>
+        </div>
+    </section>
+    <!-- Testimonials Section -->
+    <section id="section4">
+        <div class="container">
+            <div class="center-content">
+                <h2 class="heading">TESTIMONIALS</h2>
+                <p class="para">
+                    Lorem ipsum dolor sit amet. Proin gravida nibh vel velit auctor
+                    aliquet
+                </p>
+            </div>
+            <div class="section4-slider">
+                <div class="your-slider">
+                    <div class="slider-content">
+                        <p class="para">"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta praesentium
+                            aliquid eius
+                            commodi voluptas accusamus perferendis, doloribus exercitationem, quod, ad alias molestias
+                            laudantium"</p>
+                        <div class="btm-content">
+                            <img src="./assets/media/shape.png" alt="">
+                            <div>
+                                <p class="description">Mr. Herp</p>
+                                <p class="para">CEO of Meme, Inc.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <p class="para">"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta praesentium
+                            aliquid eius
+                            commodi voluptas accusamus perferendis, doloribus exercitationem, quod, ad alias molestias
+                            laudantium"</p>
+                        <div class="btm-content">
+                            <img src="./assets/media/shape.png" alt="">
+                            <div>
+                                <p class="description">Mr. Herp</p>
+                                <p class="para">CEO of Meme, Inc.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <script>
+                    $(document).ready(function () {
+                        $('.your-slider').slick({
+                            arrows: true,
+                            dots: false,
+                            prevArrow: '<img src="./assets/media/left.png" class="slick-prev" alt="Previous">',
+                            nextArrow: '<img src="./assets/media/right.png" class="slick-next" alt="Next">',
+                        });
+                    });
+                </script>
+            </div>
+        </div>
+    </section>
+    <!-- Clients Section -->
+    <section id="section5">
+        <div class="container">
+            <div class="center-content">
+                <h2 class="heading">OUR HAPPY CLIENTS</h2>
+                <p class="para">
+                    Lorem ipsum dolor sit amet. Proin gravida nibh vel velit auctor
+                    aliquet
+                </p>
+            </div>
+            <div class="company">
+                <div class="upper">
+                    <img src="./assets/media/company1.png" alt="">
+                    <img src="./assets/media/company2.png" alt="">
+                    <img src="./assets/media/company3.png" alt="">
+                    <img src="./assets/media/company4.png" alt="">
+                </div>
+                <div class="lower">
+                    <img src="./assets/media/comapny5.png" alt="">
+                    <img src="./assets/media/company6.png" alt="">
+                    <img src="./assets/media/company7.png" alt="">
+                    <img src="./assets/media/company8.png" alt="">
+                </div>
+            </div>
+            <div class="section5-btn">
+                <a class="btn bTn">See all clients
+                    <i class="ri-arrow-right-line"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+    <!-- Team Section -->
+    <section id="section6">
+        <div class="container">
+            <div class="center-content">
+                <h2 class="heading">MEET THE TEAM</h2>
+                <p class="para">
+                    Lorem ipsum dolor sit amet. Proin gravida nibh vel velit auctor
+                    aliquet
+                </p>
+            </div>
+            <div class="team">
+                <div class="your-slider2">
+                    <div class="slides">
+                        <img src="./assets/media/profile1.png" alt="">
+                        <span></span>
+                        <h3 class="para text-white">Krisha Wijaya</h3>
+                        <img src="./assets/media/socialmedia.png" alt="">
+                    </div>
+                    <div class="slides">
+                        <img src="./assets/media/profile2.png" alt="">
+                        <span></span>
+                        <h3 class="para text-white">Gabriel Yoshua</h3>
+                        <img src="./assets/media/socialmedia.png" alt="">
+                    </div>
+                    <div class="slides">
+                        <img src="./assets/media/porfile3.png" alt="">
+                        <span></span>
+                        <h3 class="para text-white">Adik N.K.L Vijay</h3>
+                        <img src="./assets/media/socialmedia.png" alt="">
+                    </div>
+                    <div class="slides">
+                        <img src="./assets/media/profile4.png" alt="">
+                        <span></span>
+                        <h3 class="para text-white">Zen D.J</h3>
+                        <img src="./assets/media/socialmedia.png" alt="">
+                    </div>
+                    <div class="slides">
+                        <img src="./assets/media/profile6.png" alt="">
+                        <span></span>
+                        <h3 class="para text-white">Faizal Febri</h3>
+                        <img src="./assets/media/socialmedia.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script>
+            $(document).ready(function () {
+                $('.your-slider2').slick({
+                    slidesToShow: 5,
+                    slidesToScroll: 1,
+                    infinite: true,
+                    arrows: false,
+                    autoplay: true,
+                    speed: 1000,
+                    dots: false,
+                    responsive: [
+                        {
+                            breakpoint: 800,
+                            settings: {
+                                arrows: false,
+                                centerMode: true,
+                                centerPadding: '40px',
+                                slidesToShow: 3
+                            }
+                        },
+                        {
+                            breakpoint: 600,
+                            settings: {
+                                arrows: false,
+                                centerMode: true,
+                                centerPadding: '10px',
+                                slidesToShow: 2
+                            }
+                        },
+                        {
+                            breakpoint: 400,
+                            settings: {
+                                arrows: false,
+                                centerMode: true,
+                                centerPadding: '5px',
+                                slidesToShow: 1
+                            }
+                        }
+                    ]
+                });
+            });
+        </script>
+    </section>
+    <div class="section6-btn">
+        <a class="text-white btn bTn">WORK WITH US</a>
+    </div>
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content-wrapper">
+            <div class="left-content">
+                <div class="heading">
+                    <h2 class="heading">ABOUT US</h2>
+                </div>
+                <div class="content-wrapper">
+                    <p>This is Photoshop's version of Lorem Ipsum. Proin gravida nibh vel velit
+                        auctor aliquet. Aenean
+                        sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id
+                        elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum
+                        velit. Ut aliquam massa nisl quis neque. Suspendisse in orci enim.Aenean sollicitudin, lorem
+                        quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio
+                        sit amet nibh vulputate cursus.</p>
+                    <div class="footer-media">
+                        <a href="#"><i class="ri-basketball-line"></i></a>
+                        <a href="https://www.facebook.com"><i class="ri-facebook-circle-fill"></i></a>
+                        <a href="https://www.twitter.com"><i class="ri-twitter-fill"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="middle-content">
+                <div class="heading">
+                    <h2 class="heading">RECENT POSTS</h2>
+                </div>
+                <div class="content-wrapper content-wrapper2">
+                    <div class="post">
+                        <img src="./assets/media/recentPost1.png" alt="">
+                        <div>
+                            <p>Lorem Ipsum Dolor Sit Amet</p>
+                            <span>MAZAGINE</span>
+                        </div>
+                    </div>
+                    <div class="post">
+                        <img src="./assets/media/recentPost2.png" alt="">
+                        <div>
+                            <p>Lorem Ipsum Dolor Sit Amet</p>
+                            <span>UI DESIGN</span>
+                        </div>
+                    </div>
+                    <div class="post">
+                        <img src="./assets/media/recentPost3.png" alt="">
+                        <div>
+                            <p>Lorem Ipsum Dolor Sit Amet</p>
+                            <span>PHOTOGRAPHY</span>
+                        </div>
+                    </div>
+                    <div class="post">
+                        <img src="./assets/media/recentPost4.png" alt="">
+                        <div>
+                            <p>Lorem Ipsum Dolor Sit Amet</p>
+                            <span>BOOK</span>
+                        </div>
+                    </div>
+                    <div class="post">
+                        <img src="./assets/media/recentPost5.png" alt="">
+                        <div>
+                            <p>Lorem Ipsum Dolor Sit Amet</p>
+                            <span>UI DESIGN</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="right-content">
+                <div class="heading">
+                    <h2 class="heading">CONTACT US</h2>
+                </div>
+                <div class="content-wrapper content-wrapper3">
+                    <p>10044 West 23th Street, Suite 721 <br>
+                        New York NY 10010
+                    </p>
+                    <a href="mailto:Username@gmail.com">Email:Username@gmail.com</a>
+                    <a href="tel:+1 (0) 123 4567 890">Phone: +1 (0) 123 4567 890</a>
+                    <a href="tel:+1 (0) 123 4567 890">Fax: +1 (0) 321 4567 890</a>
+                    <form action="#">
+                        <input type="text" placeholder="Your Name.."> <br>
+                        <input type="email" placeholder="Your Email.."> <br>
+                        <textarea rows="9" cols="45" placeholder="My Message.."></textarea>
+                        <button>SEND</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <div class="lower-footer">
+        <div class="container">
+            <div class="center-content">
+                <h2>AS SEEN ON</h2>
+            </div>
+            <div class="lower-footer-content">
+                <img src="./assets/media/newschannel1.png" alt="">
+                <img src="./assets/media/newschannel2.png" alt="">
+                <img src="./assets/media/newschannel3.png" alt="">
+                <img src="./assets/media/newschannel4.png" alt="">
+            </div>
+        </div>
+    </div>
+
+    <!-- Slick Slider JS Link -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="./assets/script/script.js"></script>
+</body>
+
+</html>
